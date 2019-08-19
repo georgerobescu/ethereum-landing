@@ -3,16 +3,17 @@
   position: absolute;
   top: 0;
   right: 15vh;
-  opacity: 0; }
+  opacity: 0;
+  z-index: -1; }
 
 .background__image--0 {
   animation: 1s fadein forwards; }
 
 .background__image--1 {
-  animation: 1s fadein forwards 1s; }
+  animation: 1s fadein forwards 0.5s; }
 
 .background__image--2 {
-  animation: 1s fadein forwards 2s; }
+  animation: 1s fadein forwards 1s; }
 
 @keyframes fadein {
   0% {
@@ -28,13 +29,37 @@ body {
   font-family: Work Sans;
   font-weight: 300; }
 
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 100px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  z-index: -1; }
+
+.hero__header {
+  font-size: 40px;
+  font-weight: 300; }
+
+.hero__header span {
+  font-weight: 400; }
+
+.hero__info {
+  font-size: 22px; }
+
 .nav {
   width: 100vw;
-  height: 70px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 18px; }
+  padding: 0 32px; }
 
 .nav__left {
   display: flex;
