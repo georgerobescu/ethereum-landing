@@ -1,19 +1,42 @@
 .background__image {
-  height: 100vh;
   position: absolute;
-  top: 0;
-  right: 15vh;
   opacity: 0;
   z-index: -1; }
 
 .background__image--0 {
-  animation: 9s fadein infinite; }
+  height: 100vh;
+  bottom: 0;
+  right: 15vh;
+  animation: 5s fadein25 infinite; }
 
 .background__image--1 {
-  animation: 9s fadein infinite 3s; }
+  top: 0;
+  height: 80vh;
+  top: 10vh;
+  right: 23vh;
+  animation: 5s fadein50 infinite 6s; }
 
 .background__image--2 {
-  animation: 9s fadein infinite 6s; }
+  height: 60vh;
+  top: 20vh;
+  right: 31vh;
+  animation: 5s fadein infinite 3s; }
+
+@keyframes fadein25 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadein50 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
 
 @keyframes fadein {
   0% {
@@ -22,14 +45,6 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: Work Sans;
-  font-weight: 300; }
 
 .hero {
   position: absolute;
@@ -42,18 +57,36 @@ body {
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
   z-index: -1; }
+  @media (max-width: 1440px) {
+    .hero {
+      width: 80vw; } }
+  @media (max-width: 768px) {
+    .hero {
+      width: 100vw;
+      padding-left: 32px;
+      padding-right: 32px; } }
 
 .hero__header {
-  font-size: 40px;
-  font-weight: 300; }
+  font-size: 62px;
+  font-weight: 300;
+  margin-bottom: 32px; }
+  @media (max-width: 1024px) {
+    .hero__header {
+      font-size: 32px; } }
+  @media (max-width: 460px) {
+    .hero__header {
+      font-size: 40px; } }
 
 .hero__header span {
   font-weight: 400; }
 
 .hero__info {
-  font-size: 22px; }
+  font-size: 24px; }
+  @media (max-width: 1024px) {
+    .hero__info {
+      font-size: 18px; } }
 
 .nav {
   width: 100vw;
@@ -96,3 +129,11 @@ body {
 .nav__icon {
   height: 25px;
   margin-left: 25px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Work Sans;
+  font-weight: 300; }
