@@ -5,6 +5,8 @@
   align-items: center
   justify-content: space-between
   padding: 0 32px
+  +media($breakpoint-sm)
+    padding: 0 24px
 
 .nav__left
   display: flex
@@ -18,6 +20,8 @@
   text-decoration: none
   font-size: 24px
   margin-left: 40px
+  +media($breakpoint-sm)
+    margin-left: 18px
 
 .nav__links
   display: flex
@@ -40,6 +44,8 @@
   margin-left: 24px
   +media($breakpoint-md)
     margin: 0
+  +media($breakpoint-sm)
+    font-size: 18px
 
 .nav__right
   display: flex
@@ -48,3 +54,6 @@
 .nav__icon
   height: 25px
   margin-left: 25px
+  +media($breakpoint-sm)
+    height: 20px
+    margin-left: 20px
