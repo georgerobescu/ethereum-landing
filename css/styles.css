@@ -4,7 +4,7 @@
   height: 100vh;
   right: 0;
   top: 0; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1440px) {
     .background__video {
       position: relative;
       height: 50vh;
@@ -30,9 +30,7 @@
   z-index: -1; }
   @media (max-width: 1440px) {
     .hero {
-      width: 80vw; } }
-  @media (max-width: 1024px) {
-    .hero {
+      width: 80vw;
       position: relative;
       height: auto;
       align-items: center;
@@ -52,7 +50,7 @@
   font-size: 62px;
   font-weight: 300;
   margin-bottom: 32px; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1440px) {
     .hero__header {
       font-size: 32px;
       text-align: center; } }
@@ -69,7 +67,7 @@
 
 .hero__info {
   font-size: 24px; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1440px) {
     .hero__info {
       font-size: 18px;
       text-align: center; } }
@@ -104,6 +102,10 @@
   text-decoration: none;
   font-size: 24px;
   margin-left: 40px; }
+  @media (max-width: 1024px) {
+    .nav__brand {
+      font-size: 20px;
+      margin-left: 32px; } }
   @media (max-width: 460px) {
     .nav__brand {
       margin-left: 18px; } }
@@ -127,6 +129,10 @@
   text-decoration: none;
   color: #626262;
   margin-left: 24px; }
+  @media (max-width: 1024px) {
+    .nav__link {
+      font-size: 20px;
+      margin-left: 18px; } }
   @media (max-width: 768px) {
     .nav__link {
       margin: 0; } }
