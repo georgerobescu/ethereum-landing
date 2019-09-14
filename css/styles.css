@@ -1,50 +1,8 @@
-.background__image {
+.background__video {
   position: absolute;
-  opacity: 0;
-  z-index: -1; }
-
-.background__image--0 {
+  z-index: -1;
   height: 100vh;
-  bottom: 0;
-  right: 15vh;
-  animation: 5s fadein25 infinite; }
-
-.background__image--1 {
-  top: 0;
-  height: 80vh;
-  top: 10vh;
-  right: 23vh;
-  animation: 5s fadein50 infinite 6s; }
-
-.background__image--2 {
-  height: 60vh;
-  top: 20vh;
-  right: 31vh;
-  animation: 5s fadein infinite 3s; }
-
-@keyframes fadein25 {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 0.25; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadein50 {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadein {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+  right: 0; }
 
 .hero {
   position: absolute;
@@ -57,7 +15,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  width: 60vw;
+  width: 70vw;
   z-index: -1; }
   @media (max-width: 1440px) {
     .hero {
