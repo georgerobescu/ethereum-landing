@@ -25,12 +25,21 @@
   list-style: none
   margin: 0
   padding: 0
+  +media($breakpoint-md)
+    position: absolute
+    // Nav height
+    top: 90px
+    left: 0
+    width: 100%
+    justify-content: space-evenly
 
 .nav__link
   font-size: 24px
   text-decoration: none
   color: #626262
   margin-left: 24px
+  +media($breakpoint-md)
+    margin: 0
 
 .nav__right
   display: flex
