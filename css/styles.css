@@ -151,6 +151,9 @@
       height: 20px;
       margin-left: 20px; } }
 
+#dark-mode {
+  cursor: pointer; }
+
 .footer {
   width: 100vw;
   height: 40px;
@@ -170,6 +173,19 @@
   @media (max-width: 460px) {
     .footer__info {
       font-size: 12px; } }
+
+.dark {
+  background: #211F21;
+  color: #b4b4b4; }
+
+.dark .nav__link {
+  color: #b4b4b4; }
+
+.dark .footer__info {
+  color: rgba(180, 180, 180, 0.6); }
+
+.dark .nav__brand {
+  color: #2a61ff; }
 
 * {
   box-sizing: border-box; }

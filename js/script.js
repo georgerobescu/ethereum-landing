@@ -1,3 +1,5 @@
+// Typewriter
+
 function typeWriter() {
   const words = [
     'applications.',
@@ -25,3 +27,22 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+// Dark mode
+
+const darkButton = document.querySelector('#dark-mode');
+const body = document.querySelector('body');
+const backgroundVideo = document.querySelector('.background__video');
+const moonSun = document.querySelector('#moon-sun');
+
+darkButton.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  if(body.classList.contains('dark')) {
+    backgroundVideo.src = 'https://res.cloudinary.com/dtqk9d1xc/video/upload/v1565083119/Comp_1_3_yikcia.mp4';
+    moonSun.src = 'img/sun.png';
+  } else {
+    backgroundVideo.src = 'https://ucarecdn.com/b33f5c86-2d0b-4063-99e1-0acfc6d15a00/ethwhiteoptimized2.mp4';
+    moonSun.src = 'img/moon.png';
+  }
+});
